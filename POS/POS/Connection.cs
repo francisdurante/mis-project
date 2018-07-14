@@ -20,7 +20,7 @@ namespace POS
             }
             catch (Exception k)
             {
-                MessageBox.Show(k.Message + "Connections");
+                MessageBox.Show(k.Message + "Connection");
                 cnn.Close();
             }
             return cnn;
