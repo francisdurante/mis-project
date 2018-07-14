@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CF0994A-8722-4497-B930-68A72807636B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="foLogin\forLoginDAO.cs" />
+    <Compile Include="foLogin\forLoginVO.cs" />
+    <Compile Include="forAddItem\forAddItemDAO.cs" />
+    <Compile Include="forAddItem\forAddItemsVO.cs" />
+    <Compile Include="forBrowseCategory\forBrowseCategoryVO.cs" />
+    <Compile Include="forBrowseCategory\forBrowseCatergoryDAO.cs" />
+    <Compile Include="forBrowsePosition\forBrowsePositionDAO.cs" />
+    <Compile Include="forBrowsePosition\forBrowsePositionVO.cs" />
+    <Compile Include="forBrowseUser\forAddUserDAO.cs" />
+    <Compile Include="forBrowseUser\forAddUserVO.cs" />
+    <Compile Include="forChangePassword\forChangePasswordDAO.cs" />
+    <Compile Include="forInventoryCheck\forInventoryCheckDAO.cs" />
+    <Compile Include="forInventoryCheck\forInventoryCheckVO.cs" />
+    <Compile Include="forItemLists\forItemListDAO.cs" />
+    <Compile Include="forMainPOS\forMainPOSDAO.cs" />
+    <Compile Include="forMainPOS\forMainPOSVO.cs" />
+    <Compile Include="forOverride\forOverrideDAO.cs" />
+    <Compile Include="forOverride\forOverrideVO.cs" />
+    <Compile Include="forTransaction\forTransactionDAO.cs" />
+    <Compile Include="forTransaction\forTransactionVO.cs" />
+    <Compile Include="frmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCategory.Designer.cs">
+      <DependentUpon>frmAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddItem.Designer.cs">
+      <DependentUpon>frmAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPosition.Designer.cs">
+      <DependentUpon>frmAddPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmountRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmountRender.Designer.cs">
+      <DependentUpon>frmAmountRender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuditTrail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditTrail.Designer.cs">
+      <DependentUpon>frmAuditTrail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowseCategory.Designer.cs">
+      <DependentUpon>frmBrowseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowsePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowsePosition.Designer.cs">
+      <DependentUpon>frmBrowsePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowseUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowseUser.Designer.cs">
+      <DependentUpon>frmBrowseUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectionString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectionString.Designer.cs">
+      <DependentUpon>frmConnectionString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryCheck.Designer.cs">
+      <DependentUpon>frmInventoryCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemList.Designer.cs">
+      <DependentUpon>frmItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainPOS.Designer.cs">
+      <DependentUpon>frmMainPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOverride.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOverride.Designer.cs">
+      <DependentUpon>frmOverride.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParameters.Designer.cs">
+      <DependentUpon>frmParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals\GlobalCodeVO.cs" />
+    <Compile Include="Globals\GlobalsCodeDAO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddCategory.resx">
+      <DependentUpon>frmAddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddItem.resx">
+      <DependentUpon>frmAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPosition.resx">
+      <DependentUpon>frmAddPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmountRender.resx">
+      <DependentUpon>frmAmountRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditTrail.resx">
+      <DependentUpon>frmAuditTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowseCategory.resx">
+      <DependentUpon>frmBrowseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowsePosition.resx">
+      <DependentUpon>frmBrowsePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowseUser.resx">
+      <DependentUpon>frmBrowseUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectionString.resx">
+      <DependentUpon>frmConnectionString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryCheck.resx">
+      <DependentUpon>frmInventoryCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemList.resx">
+      <DependentUpon>frmItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainPOS.resx">
+      <DependentUpon>frmMainPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverride.resx">
+      <DependentUpon>frmOverride.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParameters.resx">
+      <DependentUpon>frmParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BranchAddress.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Branch.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CompanyAddress.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CompanyName.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ConnectionString.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
