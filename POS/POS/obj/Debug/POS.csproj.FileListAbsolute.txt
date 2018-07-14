@@ -29,3 +29,6 @@ C:\Users\Francis\documents\visual studio 2015\Projects\POS\POS\obj\Debug\POS.pdb
 C:\Users\Francis\documents\visual studio 2015\Projects\POS\POS\obj\Debug\POS.frmAddItem.resources
 C:\Users\Francis\documents\visual studio 2015\Projects\POS\POS\obj\Debug\POS.frmInventoryCheck.resources
 C:\Users\Francis\documents\visual studio 2015\Projects\POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
+C:\Users\Francis\Desktop\mis-project\POS\POS\bin\Debug\POS.exe.config
+C:\Users\Francis\Desktop\mis-project\POS\POS\obj\Debug\POS.exe
+C:\Users\Francis\Desktop\mis-project\POS\POS\obj\Debug\POS.pdb
